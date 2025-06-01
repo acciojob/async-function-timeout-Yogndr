@@ -1,6 +1,6 @@
 //your JS code here. If required.
 
-let button=document.querySelector("#button");
+let button=document.querySelector("#btn");
 let output=document.querySelector("#output");
 
 
