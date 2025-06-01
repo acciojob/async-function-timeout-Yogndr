@@ -10,7 +10,7 @@ button.addEventListener("click",()=>{
 
 	   await setTimeout(()=>{
 		  output.textContent=text.value;
-	  },delay)
+	  },delay.value)
 	  
   })
 })
