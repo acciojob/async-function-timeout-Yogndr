@@ -1,17 +1,22 @@
 //your JS code here. If required.
-let text=document.querySelector("#text");
-let delay=document.querySelector("#delay");
+let text=document.querySelector("#text").value;
+let delay=parseInt(document.querySelector("#delay").value);
 let button=document.querySelector("#button");
 let output=document.querySelector("#output");
 
 
-button.addEventListener("click",()=>{
-	async function sol(()=>{
+button.addEventListener("click",async()=>{
+	
+	  output.textContent="";
+	await new Promise((resolve)=>{
 
-	   await setTimeout(()=>{
-		  output.textContent=text.value;
-	  },delay.value)
-	  
-  })
+		setTimeout(()=>{
+			resolve();
+		},delay)
+		
+	})
+
+	output.textContent=text;
+  
 })
   
